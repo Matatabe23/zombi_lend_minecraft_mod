@@ -1,0 +1,10 @@
+{
+  "item.zombilend.mandarin": "Мандарин",
+
+  "block.zombilend.mandarin_wood": "Мандариновое дерево",
+
+  "itemGroup.zombi_land_block": "Блоки зомби",
+  "itemGroup.zombi_land_food": "Еда зомби",
+  "itemGroup.zombi_land_tool": "Инструменты зомби",
+  "itemGroup.zombi_land_zombi": "Яйца спавна зомби"
+}

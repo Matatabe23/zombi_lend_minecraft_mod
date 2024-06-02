@@ -1,18 +1,17 @@
 package com.qugor.zombilend.creativeTab;
 
-import com.qugor.zombilend.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
-public class TabZombiLandTools extends CreativeModeTab {
+public class TabZombiLandBlock extends CreativeModeTab {
 
-    public TabZombiLandTools() {
-        super("zombi_land_tools");
+    public TabZombiLandBlock() {
+        super("zombi_land_block");
     }
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(Items.DIAMOND_SWORD);
+        return new ItemStack(Items.ACACIA_WOOD);
     }
 }

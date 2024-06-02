@@ -4,14 +4,14 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
-public class TabZombiLandZombi extends CreativeModeTab {
+public class TabZombiLandTool extends CreativeModeTab {
 
-    public TabZombiLandZombi() {
-        super("zombi_land_zombi");
+    public TabZombiLandTool() {
+        super("zombi_land_tool");
     }
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(Items.ZOMBIE_SPAWN_EGG);
+        return new ItemStack(Items.DIAMOND_SWORD);
     }
 }

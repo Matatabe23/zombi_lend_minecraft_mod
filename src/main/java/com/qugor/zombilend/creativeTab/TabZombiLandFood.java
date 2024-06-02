@@ -1,6 +1,6 @@
 package com.qugor.zombilend.creativeTab;
 
-import com.qugor.zombilend.item.ModItems;
+import com.qugor.zombilend.item.ModItemsFood;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -12,6 +12,6 @@ public class TabZombiLandFood extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(ModItems.MANDARIN.get());
+        return new ItemStack(ModItemsFood.MANDARIN.get());
     }
 }

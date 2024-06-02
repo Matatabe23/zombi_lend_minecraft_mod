@@ -1,3 +1,10 @@
 {
-  "item.zombilend.mandarin": "Mandarin"
+  "item.zombilend.mandarin": "Mandarin",
+
+  "block.zombilend.mandarin_wood": "Tangerine tree",
+
+  "itemGroup.zombi_land_block": "Zombi block",
+  "itemGroup.zombi_land_food": "Zombi food",
+  "itemGroup.zombi_land_tool": "Zombi tool",
+  "itemGroup.zombi_land_zombi": "Zombi egg"
 }
