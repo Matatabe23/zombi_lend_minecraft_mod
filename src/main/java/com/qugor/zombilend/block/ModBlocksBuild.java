@@ -6,6 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,8 +21,10 @@ public class ModBlocksBuild {
             DeferredRegister.create(ForgeRegistries.BLOCKS, zombilend.MOD_ID);
 
     public static final RegistryObject<Block> MANDARIN_WOOD = registerBlock("mandarin_wood",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(1f).requiresCorrectToolForDrops()), zombilend.ZOMBI_LAND_BLOCK);
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), zombilend.ZOMBI_LAND_BLOCK);
+
+    public static final RegistryObject<Block> MANDARIN_LEAVES = registerBlock("mandarin_leaves",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)), zombilend.ZOMBI_LAND_BLOCK);
 
 
 

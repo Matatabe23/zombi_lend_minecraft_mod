@@ -1,6 +1,11 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "zombilend:block/mandarin_wood"
+    "up": "zombilend:block/mandarin_wood_top_bottom",
+    "down": "zombilend:block/mandarin_wood_top_bottom",
+    "north": "zombilend:block/mandarin_wood",
+    "south": "zombilend:block/mandarin_wood",
+    "west": "zombilend:block/mandarin_wood",
+    "east": "zombilend:block/mandarin_wood"
   }
 }
