@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "zombilend:block/stripped_tangerine_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "zombilend:block/stripped_tangerine_log"
+    },
+    "axis=z": {
+      "model": "zombilend:block/stripped_tangerine_log_horizontal",
+      "x": 90
+    }
+  }
+}

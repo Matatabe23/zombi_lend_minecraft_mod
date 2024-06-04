@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "zombilend:block/tangerine_tree/tangerine_sapling"
+  },
+  "render_type": "cutout"
+}

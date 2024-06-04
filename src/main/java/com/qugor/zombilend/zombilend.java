@@ -9,6 +9,8 @@ import com.qugor.zombilend.creativeTab.TabZombiLandZombi;
 import com.qugor.zombilend.item.ModItemsBlock;
 import com.qugor.zombilend.item.ModItemsFood;
 import com.qugor.zombilend.mob.ModMobs;
+import com.qugor.zombilend.world.feature.ModConfiguredFeatures;
+import com.qugor.zombilend.world.feature.ModPlacedFeatures;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -35,6 +37,9 @@ public class zombilend {
         ModItemsFood.register(modEventBus);
         ModItemsBlock.register(modEventBus);
         ModBlocksBuild.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         ModMobs.ENTITIES.register(modEventBus);
 

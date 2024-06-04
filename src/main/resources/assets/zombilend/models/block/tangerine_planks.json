@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "zombilend:block/tangerine_tree/tangerine_planks"
+  }
+}

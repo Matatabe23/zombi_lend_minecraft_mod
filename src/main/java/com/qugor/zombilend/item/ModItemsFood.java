@@ -15,6 +15,6 @@ public class ModItemsFood {
         ITEMS.register(eventBus);
     }
 
-    public static final RegistryObject<Item> MANDARIN = ITEMS.register("mandarin",
+    public static final RegistryObject<Item> TANGERINE = ITEMS.register("tangerine",
             () -> new Item(new Item.Properties().tab(zombilend.ZOMBI_LAND_FOOD)));
 }

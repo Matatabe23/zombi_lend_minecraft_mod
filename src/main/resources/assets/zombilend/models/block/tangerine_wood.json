@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "zombilend:block/tangerine_tree/tangerine_log",
+    "side": "zombilend:block/tangerine_tree/tangerine_log"
+  }
+}

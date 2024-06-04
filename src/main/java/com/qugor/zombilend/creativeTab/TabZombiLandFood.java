@@ -12,6 +12,6 @@ public class TabZombiLandFood extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(ModItemsFood.MANDARIN.get());
+        return new ItemStack(ModItemsFood.TANGERINE.get());
     }
 }

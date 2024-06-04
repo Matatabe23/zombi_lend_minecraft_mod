@@ -1,8 +1,13 @@
 {
-  "item.zombilend.mandarin": "Mandarin",
+  "item.zombilend.tangerine": "Tangerine",
 
-  "block.zombilend.mandarin_wood": "Tangerine tree",
-  "block.zombilend.mandarin_leaves": "Leaves mandarin",
+  "block.zombilend.tangerine_log": "Tangerine tree",
+  "block.zombilend.tangerine_wood": "Tangerine wood",
+  "block.zombilend.stripped_tangerine_log": "Stripped tangerine tree",
+  "block.zombilend.stripped_tangerine_wood": "Stripped tangerine wood",
+  "block.zombilend.tangerine_planks": "Tangerine planks",
+  "block.zombilend.tangerine_leaves": "Tangerine leaves",
+  "block.zombilend.tangerine_sapling": "Tangerine sapling",
 
   "itemGroup.zombi_land_block": "Zombi block",
   "itemGroup.zombi_land_food": "Zombi food",

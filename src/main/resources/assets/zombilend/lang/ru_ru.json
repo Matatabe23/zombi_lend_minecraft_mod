@@ -1,8 +1,13 @@
 {
-  "item.zombilend.mandarin": "Мандарин",
+  "item.zombilend.tangerine": "Мандарин",
 
-  "block.zombilend.mandarin_wood": "Мандариновое дерево",
-  "block.zombilend.mandarin_leaves": "Листья мандарина",
+  "block.zombilend.tangerine_log": "Мандариновое дерево",
+  "block.zombilend.tangerine_wood": "Мандариновая древесина",
+  "block.zombilend.stripped_tangerine_log": "Очищенное мандариновое дерево",
+  "block.zombilend.stripped_tangerine_wood": "Очищенная мандариновая древесина",
+  "block.zombilend.tangerine_planks": "Мандариновая доска",
+  "block.zombilend.tangerine_leaves": "Мандариновые листья",
+  "block.zombilend.tangerine_sapling": "Мандариновый саженец",
 
   "itemGroup.zombi_land_block": "Блоки зомби",
   "itemGroup.zombi_land_food": "Еда зомби",

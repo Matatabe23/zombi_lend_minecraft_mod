@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "zombilend:mandarin_leaves"
+          "name": "zombilend:tangerine_leaves"
         }
       ],
       "conditions": [
@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "zombilend:mandarin",
+          "name": "zombilend:tangerine",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -39,6 +39,30 @@
         {
           "condition": "minecraft:random_chance",
           "chance": 0.3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "zombilend:tangerine_sapling",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
         }
       ]
     }
