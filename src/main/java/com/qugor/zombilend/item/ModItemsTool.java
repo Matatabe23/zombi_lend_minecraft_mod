@@ -1,5 +1,6 @@
 package com.qugor.zombilend.item;
 
+import com.qugor.zombilend.registry.ModCreativeTabs;
 import com.qugor.zombilend.zombilend;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,5 +17,5 @@ public class ModItemsTool {
     }
 
     public static final RegistryObject<Item> MANDARIN = ITEMS.register("mandarin",
-            () -> new Item(new Item.Properties().tab(zombilend.ZOMBI_LAND_FOOD)));
+            () -> new Item(new Item.Properties().tab(ModCreativeTabs.ZOMBI_LAND_FOOD)));
 }

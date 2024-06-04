@@ -1,6 +1,7 @@
 package com.qugor.zombilend.block;
 
 import com.qugor.zombilend.item.ModItemsBlock;
+import com.qugor.zombilend.registry.ModCreativeTabs;
 import com.qugor.zombilend.world.feature.tree.TangerineTreeGrower;
 import com.qugor.zombilend.zombilend;
 import net.minecraft.core.BlockPos;
@@ -28,13 +29,13 @@ public class ModBlocksBuild {
 
 
     public static final RegistryObject<Block> TANGERINE_LOG = registerBlock("tangerine_log",
-            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), zombilend.ZOMBI_LAND_BLOCK);
+            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeTabs.ZOMBI_LAND_BLOCK);
     public static final RegistryObject<Block> TANGERINE_WOOD = registerBlock("tangerine_wood",
-            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), zombilend.ZOMBI_LAND_BLOCK);
+            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), ModCreativeTabs.ZOMBI_LAND_BLOCK);
     public static final RegistryObject<Block> STRIPPED_TANGERINE_LOG = registerBlock("stripped_tangerine_log",
-            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), zombilend.ZOMBI_LAND_BLOCK);
+            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), ModCreativeTabs.ZOMBI_LAND_BLOCK);
     public static final RegistryObject<Block> STRIPPED_TANGERINE_WOOD = registerBlock("stripped_tangerine_wood",
-            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), zombilend.ZOMBI_LAND_BLOCK);
+            () -> new ModSapling(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), ModCreativeTabs.ZOMBI_LAND_BLOCK);
 
     public static final RegistryObject<Block> TANGERINE_PLANKS = registerBlock("tangerine_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
@@ -52,7 +53,7 @@ public class ModBlocksBuild {
                 public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 20;
                 }
-            }, zombilend.ZOMBI_LAND_BLOCK);
+            }, ModCreativeTabs.ZOMBI_LAND_BLOCK);
     public static final RegistryObject<Block> TANGERINE_LEAVES = registerBlock("tangerine_leaves",
             () -> new TangerineLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
@@ -69,11 +70,14 @@ public class ModBlocksBuild {
                 public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 60;
                 }
-            }, zombilend.ZOMBI_LAND_BLOCK);
+            }, ModCreativeTabs.ZOMBI_LAND_BLOCK);
 
     public static final RegistryObject<Block> TANGERINE_SAPLING = registerBlock("tangerine_sapling",
             () -> new SaplingBlock(new TangerineTreeGrower(),
-                    BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), zombilend.ZOMBI_LAND_BLOCK);
+                    BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeTabs.ZOMBI_LAND_BLOCK);
+
+    public static final RegistryObject<Block> ZOMBI_STAND = registerBlock("zombie_stand",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), ModCreativeTabs.ZOMBI_LAND_BLOCK);
 
 
 

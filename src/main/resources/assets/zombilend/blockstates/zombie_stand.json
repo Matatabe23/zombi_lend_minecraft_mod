@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "zombilend:block/zombie_stand"
+    }
+  }
+}
