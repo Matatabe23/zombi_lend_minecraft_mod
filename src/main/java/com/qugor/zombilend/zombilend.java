@@ -41,8 +41,6 @@ public class zombilend {
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
-        ModMobs.ENTITIES.register(modEventBus);
-
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::onClientSetup);
 
