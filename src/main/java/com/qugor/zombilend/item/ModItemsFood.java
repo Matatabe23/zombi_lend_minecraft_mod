@@ -1,5 +1,6 @@
 package com.qugor.zombilend.item;
 
+import com.qugor.zombilend.item.custom.ModFoodSettings;
 import com.qugor.zombilend.registry.ModCreativeTabs;
 import com.qugor.zombilend.zombilend;
 import net.minecraft.world.item.Item;
@@ -17,5 +18,5 @@ public class ModItemsFood {
     }
 
     public static final RegistryObject<Item> TANGERINE = ITEMS.register("tangerine",
-            () -> new Item(new Item.Properties().tab(ModCreativeTabs.ZOMBI_LAND_FOOD)));
+            () -> new Item(new Item.Properties().food(ModFoodSettings.TANGERINE).tab(ModCreativeTabs.ZOMBI_LAND_FOOD)));
 }

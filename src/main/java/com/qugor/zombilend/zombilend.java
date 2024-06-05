@@ -2,11 +2,13 @@ package com.qugor.zombilend;
 
 import com.mojang.logging.LogUtils;
 import com.qugor.zombilend.block.ModBlocksBuild;
+import com.qugor.zombilend.entity.ModEntities;
+import com.qugor.zombilend.entity.client.ZombiSwordsManRenderer;
 import com.qugor.zombilend.item.ModItemsBlock;
 import com.qugor.zombilend.item.ModItemsFood;
+import com.qugor.zombilend.item.ModItemsZombis;
 import com.qugor.zombilend.world.feature.ModConfiguredFeatures;
 import com.qugor.zombilend.world.feature.ModPlacedFeatures;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -34,6 +36,8 @@ public class zombilend {
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
+        ModEntities.ENTITY_TYPES.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::onClientSetup);
 
@@ -56,11 +60,19 @@ public class zombilend {
         }
     }
 
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             // Ваши настройки клиента
         }
+
+        @SubscribeEvent
+        public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerEntityRenderer(ModEntities.ZOMBI_SWORDSMAN.get(), ZombiSwordsManRenderer::new);
+            event.registerEntityRenderer(ModEntities.ZOMBI_MINER.get(), ZombiSwordsManRenderer::new);
+        }
     }
+
 }
