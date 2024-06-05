@@ -33,7 +33,7 @@ public class ZombiSwordsMan extends Zombie {
     public static AttributeSupplier.Builder createAttributes() {
         return Zombie.createAttributes()
                 .add(Attributes.MAX_HEALTH, 80.0)
-                .add(Attributes.MOVEMENT_SPEED, 0.55)
+                .add(Attributes.MOVEMENT_SPEED, 0.35)
                 .add(Attributes.ATTACK_DAMAGE, 10.0);
     }
 }
